@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:#14062F;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.navbar{
+  background-color: #302858;
+}
+
+.nav-title{
+  font-weight: bold;
+  background: -webkit-linear-gradient(0deg, #EC006A -2.41%, #992F8B 98.62%);
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.searchbar{
+  width: 495px;
+  height: 36px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjMuODA5IDIxLjY0NmwtNi4yMDUtNi4yMDVjMS4xNjctMS42MDUgMS44NTctMy41NzkgMS44NTctNS43MTEgMC01LjM2NS00LjM2NS05LjczLTkuNzMxLTkuNzMtNS4zNjUgMC05LjczIDQuMzY1LTkuNzMgOS43MyAwIDUuMzY2IDQuMzY1IDkuNzMgOS43MyA5LjczIDIuMDM0IDAgMy45MjMtLjYyNyA1LjQ4Ny0xLjY5OGw2LjIzOCA2LjIzOCAyLjM1NC0yLjM1NHptLTIwLjk1NS0xMS45MTZjMC0zLjc5MiAzLjA4NS02Ljg3NyA2Ljg3Ny02Ljg3N3M2Ljg3NyAzLjA4NSA2Ljg3NyA2Ljg3Ny0zLjA4NSA2Ljg3Ny02Ljg3NyA2Ljg3N2MtMy43OTMgMC02Ljg3Ny0zLjA4NS02Ljg3Ny02Ljg3N3oiLz48L3N2Zz4=);
+  background-repeat:no-repeat;
+  background-position: 5px center;
+  padding-left:40px;
+}
+
+.meme-image{
+  width:300px;
+}
+
+.meme-info{
+  width:300px;
+}
+
+.meme{
+  min-width: 300px;
+  transition:0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+.meme-column{
+  min-width: 300px;
+}
+
+.meme:hover{
+  display:relative;
+  z-index:100;
+  transform: scale(1.5) translateY(50px);
+}
+
+.meme:hover > .meme-image{
+  border-bottom-left-radius:0px !important;
+  border-bottom-right-radius:0px !important;
+}
+
+.meme:hover > .meme-info{
+  background-image:linear-gradient(180deg, #302858 0%, #490074 191.18%);
+}
+
+.text-gold{
+  color:#FFCB15;
+}
+
+.hover-blur{
+  position:fixed;
+  width:100vw;
+  height:100vh;
+  background-color:black;
+  opacity:0;
+  z-index: 1;
+  transition: all 0.5s, z-index 0s;
+}
+
+.navbar{
+  position: relative;
+  z-index:2;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.loadingscreen{
+  height: 100vh;
+}
+
+.fa-spin{
+  font-size:96px;
+}
+
+.save-error{
+  top:10%;
+  left:50%;
+  z-index:101;
+  transform:translateX(-50%);
+  display:none;
+}
+
+@media(max-width:812px){
+  .searchbar{
+    width:280px;
+  }
+  .meme:hover{
+    transform: scale(1.2) translateY(50px);
+  }
+  .nav-container{
+    flex-direction: column;
+  }
+}
