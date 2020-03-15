@@ -23,7 +23,7 @@ export class Navigation extends Component {
                     </Form>
 
                     <Nav className="">
-                            <NavLink to="/" exact activeClassName="font-weight-bold" className="text-light mr-2">Discover</NavLink>
+                            <NavLink to="/compfest-entry" exact activeClassName="font-weight-bold" className="text-light mr-2">Discover</NavLink>
                             <NavLink to="/saved" activeClassName="font-weight-bold" className="text-light">Saved Memes</NavLink>
                     </Nav>
                 </Container>
