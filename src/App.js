@@ -18,7 +18,7 @@ function App() {
       <BrowserRouter>
         <Navigation className="navbar" />
           <Switch>
-            <Route exact path="/" component={Body} />
+            <Route exact path="/compfest-entry" component={Body} />
             <Route exact path="/saved" component={Saved} />
             <Route component={Error404} />
           </Switch>
