@@ -17,7 +17,7 @@ export class Body extends Component {
     
     componentDidMount(){
         var unfilteredMemes
-        axios.get("https://compfest-entry-api.herokuapp.com//api/")
+        axios.get("https://compfest-entry-api.herokuapp.com/api/")
             .then(res => {
                 this.setState({memes: res.data})
                 unfilteredMemes = this.state.memes
