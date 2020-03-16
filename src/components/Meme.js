@@ -23,7 +23,7 @@ export class Meme extends Component {
         })
         
         // Check if meme saved or not
-        axios.post("http://127.0.0.1:8000/api/check",{
+        axios.post("https://compfest-entry-api.herokuapp.com//api/check",{
             postLink: this.props.postLink,
             subreddit: this.props.subreddit,
             title: this.props.title,
@@ -40,7 +40,7 @@ export class Meme extends Component {
 
     // Saves meme with post request to the saved meme api
     handleSave = () => {
-        axios.post("http://127.0.0.1:8000/api/create",{
+        axios.post("https://compfest-entry-api.herokuapp.com//api/create",{
                 postLink: this.props.postLink,
                 subreddit: this.props.subreddit,
                 title: this.props.title,
@@ -58,7 +58,7 @@ export class Meme extends Component {
 
     // Deletes meme from the api
     handleUnsave = () => {
-        axios.delete("http://127.0.0.1:8000/api/delete",{
+        axios.delete("https://compfest-entry-api.herokuapp.com//api/delete",{
             data : {
             postLink: this.props.postLink,
             subreddit: this.props.subreddit,
